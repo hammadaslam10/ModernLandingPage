@@ -81,6 +81,14 @@ width :100%;
 height: auto; 
 
 }
+@media (max-width : 70em){
+
+overflow-x:hidden ;
+}
+@media (max-width : 70em){
+
+  overflow-x:hidden ;
+}
 `
 const Details = styled.div`
   display: flex;
@@ -95,14 +103,14 @@ border-bottom-right-radius:20px;
 
 span{
 font-size:${props => props.theme.fontsm};
-color :${props=> `rgba(${props.theme.bodyRgba},o.6)`}
+color :${props=> `rgba(${props.theme.bodyRgba},o.6)`};
 font-weight : 600;
 
 line-height: 1.5rem;
 
 }h1{
   font-size:${props => props.theme.fontsm};
-  color :${props=> `rgba(${props.theme.bodyRgba},o.6)`}
+  color :${props=> `rgba(${props.theme.bodyRgba},o.6)`};
   font-weight : 600;
   line-height: 1.5rem;
   
@@ -147,12 +155,12 @@ return (
 
 <img src= {img} alt = 'the weirdos'></img>
 <Details>
-{/* <div>
+<div>
 <span>weirdos</span><br/> 
 <h1> #{number}</h1>
 
 
-</div> */}
+</div> 
 <div>
   <Price>
     <img src={Eth} alt = 'eth'></img>
